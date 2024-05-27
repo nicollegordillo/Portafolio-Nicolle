@@ -1,5 +1,9 @@
 import React from 'react';
 import styles from '../styles/panel.css';
+import AboutMeSection from './AboutMeSection';
+import ProjectsSection from './ProjectsSection';
+import ContactsSection from './ContactsSection';
+import TechnologiesSection from './TechnologiesSection';
 
 const PanelLayout = ({ header, topText, children }) => {
   return (
@@ -14,6 +18,10 @@ const PanelLayout = ({ header, topText, children }) => {
           </div>
         </div>
         <div className="main-content">
+          <AboutMeSection />
+          <TechnologiesSection />
+          <ProjectsSection />
+          <ContactsSection />
           {children}
         </div>
       </div>

@@ -57,3 +57,104 @@
   background-color: white; /* Ensure a white background for the main content */
   color: black; /* Change text color to black for readability */
 }
+
+.speech-bubble {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f9f9f9 transparent;
+  transform: translateX(-50%);
+}
+
+.technologies-section {
+  margin-top: 20px;
+}
+
+.technologies-section h2 {
+  color: #333;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section h3 {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 10px;
+}
+
+.projects-section {
+  margin-top: 20px;
+}
+
+.projects-section h2 {
+  color: #333;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card h3 {
+  margin-top: 10px;
+}
+
+.project-card p {
+  color: #666;
+}
+
+.contacts-section {
+  margin-top: 20px;
+}
+
+.contacts-section h2 {
+  color: #333;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  margin: 0 10px;
+}
+
+.contact-icons img {
+  width: 40px;
+  height: 40px;
+}
