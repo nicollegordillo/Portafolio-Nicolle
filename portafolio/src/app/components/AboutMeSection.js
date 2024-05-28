@@ -4,12 +4,12 @@ const AboutMeSection = () => {
   return (
     
     <div id="about-me" className="about-me-section speech-bubble"> {/* Apply both classes */}
-      <h2>About Me</h2>
+      <h2>Sobre mí</h2>
       <p>
-        I am a passionate student of Computer Science and Information Technology at the University of Valle de Guatemala. I hold a Bachelor's degree in Sciences and Letters with a focus on Computer Science.
+        Hola!! Soy Nicolle Gordillo. Actualmente estudio Ingeniería en Ciencias de la Computación y Tecnologías de la Información en la Universidad del Valle de Guatemala. También tengo un Bachillerato en Ciencias y Letras con orientación en Computación.
       </p>
       <p>
-        Beyond my academic pursuits, I have a keen interest in Japanese culture, manga, and video games. I am fluent in English and have an intermediate level of proficiency in Japanese.
+        Más allá de mis actividades académicas, Me apasiona la tecnología, los videojuegos y el manga. Hablo inglés fluido y japonés intermedio.
       </p>
     </div>
   );

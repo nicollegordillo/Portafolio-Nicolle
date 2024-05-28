@@ -87,16 +87,26 @@
 
 .main-content {
   opacity:1;
-  padding: 20px;
+  
   background-color: white; /* Ensure a white background for the main content */
   color: black; /* Change text color to black for readability */
   background-color: #FFDBD8;
+  display:flex;
+  flex-direction: column;
+  
+}
+
+.imagebox {
+  align-items: center;
+  text-align: center;
+  index-z: 1;
+  justify-content: center;
 }
 
 .speech-bubble {
   position: relative;
   background-color: #f9f9f9;
-  border-radius: 8px;
+  border-radius: .4em;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 20px; /* Adjust the margin as needed */
@@ -104,13 +114,17 @@
 
 .speech-bubble::after {
   content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #f9f9f9 transparent;
-  transform: translateX(-50%);
+   position: absolute;
+   bottom: 0;
+   left: 35%;
+   width: 0;
+   height: 0;
+   border: 20px solid transparent;
+   border-top-color: #f9f9f9;
+   border-bottom: 0;
+   border-right: 0;
+   margin-left: -10px;
+   margin-bottom: -20px;
 }
 
 .technologies-section {
@@ -278,4 +292,13 @@
 
 .buttonText {
   display: block; /* Makes each span act like a block element, causing a line break */
+}
+
+.aboutdiv {
+  background: radial-gradient(circle, #ffc2d1 40%, transparent 41%),radial-gradient(circle at bottom left, #ffc2d1 20%, transparent 21%),radial-gradient(circle at bottom right, #ffc2d1 20%, transparent 21%),radial-gradient(circle at top left, #ffc2d1 20%, transparent 21%),radial-gradient(circle at top right, #ffc2d1 20%, transparent 21%);
+  background-size: 3em 3em;
+  background-color: #FFDBD8;
+  opacity: 1;
+  width: 100%;
+  padding: 20px;
 }

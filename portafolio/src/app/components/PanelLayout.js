@@ -5,6 +5,7 @@ import AboutMeSection from './AboutMeSection';
 import ProjectsSection from './ProjectsSection';
 import ContactsSection from './ContactsSection';
 import TechnologiesSection from './TechnologiesSection';
+import {chibi} from '../images.js';
 
 const PanelLayout = ({ header, topText, children }) => {
   const scrollToSection = (id) => {
@@ -41,7 +42,12 @@ const PanelLayout = ({ header, topText, children }) => {
           </div>
         </div>
         <div className="main-content">
-          <AboutMeSection id="about-me"/>
+          <div className="aboutdiv">
+            <AboutMeSection id="about-me"/>
+            <div className="imagebox">
+              <img src={chibi} alt="image" style={{ width: '50%', height: 'auto' }} />
+            </div>
+          </div>
           <TechnologiesSection id="technologies"/>
           <ProjectsSection id="projects"/>
           <ContactsSection id="contacts"/>
