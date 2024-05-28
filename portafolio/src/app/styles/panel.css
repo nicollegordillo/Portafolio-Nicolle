@@ -90,8 +90,8 @@
   background-color: white; /* Ensure a white background for the main content */
   color: black; /* Change text color to black for readability */
   background-color: #FFDBD8;
-  display:flex;
-  flex-direction: column;
+  /*display:flex;
+  flex-direction: column;*/
   
 }
 
@@ -182,40 +182,72 @@
 }
 
 .icons a:hover {
-  filter: drop-shadow(0 0 10px #ff4d6d);
   transition: all 0.65s;
   transform: rotateY(360deg);
 }
 
 .projects-section {
-  margin-top: 20px;
+  padding: 2rem;
+  /*overflow: hidden;*/
+  
+  place-items: center;
 }
 
 .projects-section h2 {
-  color: #333;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.bg-shape {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-shape:after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: #ff4d6d;
+  border-radius: 50%;
+  top: -60%;
+  right: -20%;
 }
 
 .project-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /*overflow: hidden;*/
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  background-color: #f9f9f9;
+  margin: 20px 50px;
+}
+
+.project-card a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .project-card img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 8px;
 }
 
 .project-card h3 {
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 1.5em;
 }
 
 .project-card p {
+  padding: 0 15px 15px;
   color: #666;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contacts-section {
@@ -335,3 +367,5 @@
   width: 100%;
   padding: 20px;
 }
+
+
