@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TechnologiesSection = () => {
+const TechnologiesSection = ({id}) => {
   return (
-    <div className="technologies-section">
+    <div id={id} className="technologies-section">
       <h2>Technologies & Languages</h2>
       <div className="section">
         <h3>Programming Languages</h3>

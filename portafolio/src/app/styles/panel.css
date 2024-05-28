@@ -7,7 +7,7 @@
   opacity: 1;
   background-image:  linear-gradient(#e1eff6 1.7000000000000002px, transparent 1.7000000000000002px), linear-gradient(to right, #e1eff6 1.7000000000000002px, #edf8fc 1.7000000000000002px);
   background-size: 34px 34px;
-  overflow-y: auto; /* Enable vertical scrolling for the entire container */
+  overflow-y: visible; /* Enable vertical scrolling for the entire container */
 }
 
 .panel {
@@ -19,7 +19,7 @@
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
-  overflow-y: auto; /* Ensure content does not overflow the rounded corners */
+  overflow-y: visible; /* Ensure content does not overflow the rounded corners */
   position: relative;
   color: white; /* Ensure text is readable over the backgro*/
 }
@@ -157,4 +157,27 @@
 .contact-icons img {
   width: 40px;
   height: 40px;
+}
+
+.section-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.section-links button {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.section-links button:hover {
+  background: #ff4d6d;
+  color: #fff;
 }

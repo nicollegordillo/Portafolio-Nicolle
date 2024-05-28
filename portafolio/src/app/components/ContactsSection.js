@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactsSection = () => {
   return (
-    <div className="contacts-section">
+    <div id="contacts" className="contacts-section">
       <h2>Contact</h2>
       <div className="contact-icons">
         <a href="mailto:your-email@example.com"><img src="email-icon.png" alt="Email" /></a>

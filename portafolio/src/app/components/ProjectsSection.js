@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectsSection = () => {
   return (
-    <div className="projects-section">
+    <div id="projects" className="projects-section">
       <h2>Projects</h2>
       <div className="project-card">
         <a href="https://github.com/your-project-url" target="_blank" rel="noopener noreferrer">
