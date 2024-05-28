@@ -20,14 +20,24 @@ const PanelLayout = ({ header, topText, children }) => {
           <div className="header">
             {header}
           </div>
+          <div className="subtitle">
+            ニコル
+          </div>
+          <div className="title">
+            Nicolle Gordillo
+          </div>
           <div className="additional-text">
             {topText}
           </div>
           <div className="section-links">
-            <button onClick={() => scrollToSection('about-me')}>Sobre mí</button>
-            <button onClick={() => scrollToSection('technologies')}>Tecnologías y Lenguajes</button>
-            <button onClick={() => scrollToSection('contacts')}>Contactos</button>
-            <button onClick={() => scrollToSection('projects')}>Proyectos</button>
+            <button className="cover buttonAboutme" onClick={() => scrollToSection('about-me')}>Sobre mí</button>
+            <button className="cover buttonTech" onClick={() => scrollToSection('technologies')}>
+              <span className="buttonText">Tecnologías</span>
+              <span className="buttonText"> y </span> 
+              <span className="buttonText"> Lenguajes </span>
+            </button>
+            <button className="cover buttonCon" onClick={() => scrollToSection('contacts')}>Contactos!!!</button>
+            <button className="cover buttonProy" onClick={() => scrollToSection('projects')}>Proyectos</button>
           </div>
         </div>
         <div className="main-content">
