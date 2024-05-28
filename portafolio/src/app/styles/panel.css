@@ -86,8 +86,7 @@
 }
 
 .main-content {
-  opacity:1;
-  
+  opacity:1;  
   background-color: white; /* Ensure a white background for the main content */
   color: black; /* Change text color to black for readability */
   background-color: #FFDBD8;
@@ -104,8 +103,9 @@
 }
 
 .speech-bubble {
+  color: #432818;
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #fdf8e1;
   border-radius: .4em;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -120,19 +120,43 @@
    width: 0;
    height: 0;
    border: 20px solid transparent;
-   border-top-color: #f9f9f9;
+   border-top-color: #fdf8e1;
    border-bottom: 0;
    border-right: 0;
    margin-left: -10px;
    margin-bottom: -20px;
 }
 
+.speech-bubble p {
+  font-size: 1.2em;
+}
+
+.speech-bubble h2 {
+  font-size: 1.7em;
+}
+
 .technologies-section {
-  margin-top: 20px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  justify-content: center;
 }
 
 .technologies-section h2 {
-  color: #333;
+  align-self: flex-start;
+  background: #ff4d6d;                                                                                   
+  color: #ffbd00;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  /*text-orientation: upright;*/
+  padding: 10px;
+  font-size: 2.5em;
 }
 
 .section {
@@ -140,7 +164,8 @@
 }
 
 .section h3 {
-  color: #666;
+  color: #432818;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
@@ -148,10 +173,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .icons a {
   margin: 10px;
+}
+
+.icons a:hover {
+  filter: drop-shadow(0 0 10px #ff4d6d);
+  transition: all 0.65s;
+  transform: rotateY(360deg);
 }
 
 .projects-section {
