@@ -26,7 +26,7 @@
   font-family: 'Gorditas', sans-serif;
   color: white; /* Change the color as needed */
  /* Adjust the font size as needed */
-  margin-bottom: 20px; /* Adjust the margin as needed */
+  
 }
 
 .container {
@@ -47,7 +47,7 @@
   width: 100vh; /* Adjust as needed */
   max-width: 1000px; /* Optional: to limit the maximum width */
   height: 98vh; /* Allow panel height to adjust based on content */
-  background-color: white;
+  background-color: #ffc2d1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow-x: hidden;
   overflow-y: visible; /* Ensure content does not overflow the rounded corners */
@@ -188,9 +188,7 @@
 
 .projects-section {
   padding: 2rem;
-  /*overflow: hidden;*/
   
-  place-items: center;
 }
 
 .projects-section h2 {
@@ -252,16 +250,20 @@
 
 .contacts-section {
   margin-top: 20px;
+  background-color: #ffc2d1;
 }
 
 .contacts-section h2 {
-  color: #333;
+  color: #432818;
+  margin-left:25px;
+  font-size: 2.5em;
 }
 
 .contact-icons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-icons a {
@@ -367,5 +369,6 @@
   width: 100%;
   padding: 20px;
 }
+
 
 

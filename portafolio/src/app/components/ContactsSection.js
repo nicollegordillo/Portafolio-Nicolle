@@ -1,13 +1,30 @@
 import React from 'react';
-
+import {email,link,github} from '../images';
 const ContactsSection = () => {
+  const showTooltip = (email) => {
+    const tooltip = document.getElementById('tooltip');
+    tooltip.innerText = email;
+    tooltip.style.display = 'block';
+  };
+
+  const hideTooltip = () => {
+    const tooltip = document.getElementById('tooltip');
+    tooltip.style.display = 'none';
+  };
   return (
-    <div id="contacts" className="contacts-section">
-      <h2>Contact</h2>
+    <div id="contacts" className="cover contacts-section">
+      <h2>Contáctame</h2>
       <div className="contact-icons">
-        <a href="mailto:your-email@example.com"><img src="email-icon.png" alt="Email" /></a>
-        <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
-        <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer"><img src="github-icon.png" alt="GitHub" /></a>
+        <a
+          href="mailto:nickygordillo912@gmail.com"
+          onMouseOver={() => showTooltip('nickygordillo912@gmail.com')}
+          onMouseOut={hideTooltip}
+        >
+          <img src={email} alt="Email" />
+        </a>
+        <div id="tooltip" style={{ display: 'none', position: 'absolute', backgroundColor: 'black', color: 'white', padding: '5px' }}></div>
+        <a href="https://www.linkedin.com/in/nicolle-alexandra-gordillo-ram%C3%ADrez/" target="_blank" rel="noopener noreferrer"><img src={link} alt="LinkedIn" /></a>
+        <a href="https://github.com/nicollegordillo" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" /></a>
         {/* Add more contact icons as needed */}
       </div>
     </div>
