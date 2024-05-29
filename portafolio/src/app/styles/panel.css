@@ -12,13 +12,6 @@
   font-weight: 500;
 }
 
-.slick-slide {
-  margin-left: 40px;
-  margin-right: 40px; 
-  display: inline-block; 
-  max-width: 300px; 
-}
-
 .subtitle{
   font-family: "Cherry Bomb One", system-ui;
   color: white; 
