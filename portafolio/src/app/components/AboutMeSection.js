@@ -3,8 +3,7 @@ import {interest, school} from '../images';
 
 const AboutMeSection = () => {
   return (
-    
-    <div id="about-me" className="cover about-me-section speech-bubble"> {/* Apply both classes */}
+    <div id="about-me" className="cover about-me-section speech-bubble">
       <h2 style={{fontsize: '4em'}} >Sobre mí</h2>
       <div className="imagebox">
         <img src={school} alt="image" style={{ width: '5%', height: 'auto' }} />

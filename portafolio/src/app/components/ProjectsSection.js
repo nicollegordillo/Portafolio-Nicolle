@@ -20,7 +20,6 @@ const ProjectsSection = () => {
 
   return (
     <div id="projects" className="projects-section">
-        
         <div className="cover">
          <h2>Proyectos</h2>
         </div>

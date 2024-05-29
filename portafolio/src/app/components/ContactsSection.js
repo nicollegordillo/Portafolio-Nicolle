@@ -25,7 +25,6 @@ const ContactsSection = () => {
         <div id="tooltip" style={{ display: 'none', position: 'absolute', backgroundColor: 'black', color: 'white', padding: '5px' }}></div>
         <a href="https://www.linkedin.com/in/nicolle-alexandra-gordillo-ram%C3%ADrez/" target="_blank" rel="noopener noreferrer"><img src={link} alt="LinkedIn" /></a>
         <a href="https://github.com/nicollegordillo" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" /></a>
-        {/* Add more contact icons as needed */}
       </div>
     </div>
   );
