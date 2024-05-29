@@ -39,8 +39,12 @@ const ProjectsSection = () => {
 
   return (
     <div id="projects" className="projects-section">
-      
-        <h2>Projects</h2>
+        
+        <div className="cover">
+         <h2>Proyectos</h2>
+        </div>
+        <div className="curve"></div>
+        <div className="cards">
         <Slider {...settings}>
           <div className="project-card">
             <a href="https://github.com/your-project-url" target="_blank" rel="noopener noreferrer">
@@ -72,7 +76,7 @@ const ProjectsSection = () => {
           </div>
           {/* Add more project cards as needed */}
         </Slider>
-      
+        </div>
     </div>
   );
 };

@@ -187,33 +187,44 @@
 }
 
 .projects-section {
-  padding: 2rem;
+  padding: 0;
+  background-color: #ffc2d1;
   
+}
+
+.cards{
+ padding:2rem;
+}
+
+.curve {
+  position:absolute;
+  width: 0;
+  height: 0;
+  border-top: 150px solid #FFDBD8;;
+  border-right: 750px solid transparent;
+  /*z-index: -1;*/
 }
 
 .projects-section h2 {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 20px;
+  color: #432818;
+  background-color:  #FFDBD8;
 }
 
 .bg-shape {
-  position: relative;
-  overflow: hidden;
-}
-
-.bg-shape:after {
-  content: '';
   position: absolute;
   width: 600px;
   height: 600px;
-  background: #ff4d6d;
+  background: #ffc2d1;
   border-radius: 50%;
   top: -60%;
   right: -20%;
+  
 }
 
 .project-card {
+  
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -249,11 +260,12 @@
 }
 
 .contacts-section {
-  margin-top: 20px;
+  background: #ffc2d1;
   background-color: #ffc2d1;
 }
 
 .contacts-section h2 {
+  
   color: #432818;
   margin-left:25px;
   font-size: 2.5em;
